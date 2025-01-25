@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🍴 Restaurant</div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Discover the flavors of excellence and experience dining like never before!</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <!-- Filter Section -->
+        <div class="filter">
+            <label for="price-range">Filter by Price:</label>
+            <select id="price-range" onchange="filterByPrice()">
+                <option value="all">All</option>
+                <option value="low">Below $10</option>
+                <option value="medium">$10 - $15</option>
+                <option value="high">Above $15</option>
+            </select>
+        </div>
+    
+        <div class="menu-items">
+            <div class="menu-item" data-price="12">
+                <img src="2.jpeg" alt="Pizza 1">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with fresh mozzarella and tomato sauce</p>
+                <p>$12.99</p>
+            </div>
+            <div class="menu-item" data-price="14">
+                <img src="1.jpeg" alt="Pizza 2">
+                <h3>Pepperoni Pizza</h3>
+                <p>Spicy pepperoni slices with mozzarella cheese</p>
+                <p>$14.99</p>
+            </div>
+            <div class="menu-item" data-price="16">
+                <img src="3.jpeg" alt="Pizza 3">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>BBQ sauce with grilled chicken, onions, and cheese</p>
+                <p>$16.99</p>
+            </div>
+            <div class="menu-item" data-price="9">
+                <img src="4.jpeg" alt="Salad">
+                <h3>Garden Salad</h3>
+                <p>Fresh vegetables with a tangy dressing</p>
+                <p>$9.99</p>
+            </div>
+            <div class="menu-item" data-price="18">
+                <img src="5.jpeg" alt="Steak">
+                <h3>Grilled Steak</h3>
+                <p>Perfectly cooked steak with sides</p>
+                <p>$18.99</p>
+            </div>
+            <div class="menu-item" data-price="8">
+                <img src="6.jpeg" alt="Burger">
+                <h3>Classic Cheeseburger</h3>
+                <p>Juicy burger with cheddar, lettuce, and tomato</p>
+                <p>$8.99</p>
+            </div>
+            <div class="menu-item" data-price="20">
+                <img src="7.jpeg" alt="Seafood">
+                <h3>Seafood Platter</h3>
+                <p>Assortment of fresh seafood with dips</p>
+                <p>$20.99</p>
+            </div>
+            <div class="menu-item" data-price="11">
+                <img src="8.jpeg" alt="Pasta">
+                <h3>Carbonara Pasta</h3>
+                <p>Creamy pasta with bacon and Parmesan cheese</p>
+                <p>$11.99</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>
+                Nestled in the heart of Food City, our restaurant is a haven for food lovers. 
+                Our team of culinary experts blends traditional flavors with modern techniques to bring you an unforgettable dining experience.  
+                Whether it's a family dinner, a romantic evening, or a casual hangout, we promise a delightful time for everyone!
+            </p><br>
+            <img src="restaurants-in-united-states.jpg" alt="Restaurant Interior">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="info">
+                <p><strong>Address:</strong> 123 Food Street, Food City</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@restaurant.com</p>
+            </div>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Other sections -->
+    <!-- (Add the other sections like Menu, About, Contact, etc. as previously built) -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
